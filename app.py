@@ -1,439 +1,422 @@
+def generate_guide_content(guide_type: str) -> str:
+    """가이드 콘텐츠 생성 함수"""
+    
+    if guide_type == "첫걸음":
+        return """
+# 🌱 인플루언서 첫걸음: 0에서 1K까지
+
+## 📋 1단계: 매력적인 프로필 만들기 (1주차)
+
+### 프로필 사진 최적화
+- **얼굴이 명확히 보이는 사진** 선택 (70% 이상 얼굴)
+- **밝고 자연스러운 표정** (미소 짓는 모습 추천)
+- **고화질 이미지** 사용 (최소 400x400px)
+- **개성을 보여주는 소품** 활용 (안경, 모자 등)
+
+### 바이오 작성 공식
+```
+[직업/전문분야] | [관심사] | [거주지]
+[개성 있는 한 줄 소개]
+[연락처 또는 링크]
+```
+
+**예시:**
+```
+뷰티 크리에이터 | 20대 직장인 | 서울
+💄 진짜 후기만 알려드려요
+📩 협업 문의: example@gmail.com
+```
+
+### 하이라이트 설정
+- **자기소개** (About Me)
+- **일상** (Daily)
+- **OOTD** (Outfit)
+- **리뷰** (Review)
+- **Q&A** (Questions)
+
+---
+
+## 📈 2단계: 첫 100명 팔로워 확보 전략 (2-4주차)
+
+### 친구/지인 활용법
+1. **개인 계정 팔로워 이전**: 기존 지인들에게 새 계정 알리기
+2. **지인 태그**: 첫 게시물에 친한 친구들 태그하기
+3. **스토리 공유 요청**: 친구들에게 계정 홍보 도움 요청
+
+### 해시태그 초보자 전략
+**황금 비율: 인기 해시태그 30% + 중간 해시태그 50% + 틈새 해시태그 20%**
+
+- **인기 해시태그** (100만+ 게시물): #daily, #ootd, #selfie
+- **중간 해시태그** (10만-100만): #20대, #직장인, #서울
+- **틈새 해시태그** (1만-10만): #직장인스타그램, #20대일상
+
+### 다른 계정과 교류하기
+- **같은 분야 계정 팔로우**: 비슷한 콘텐츠를 하는 계정 20-30개
+- **진정성 있는 댓글**: "예쁘다" 대신 구체적인 칭찬
+- **스토리 반응**: 다른 계정 스토리에 적극적으로 반응
+
+---
+
+## 🎯 3단계: 콘텐츠 일관성 유지하기 (5-8주차)
+
+### 콘텐츠 필러 정하기 (5개)
+1. **일상 공유** (30%): 소소하지만 특별한 일상
+2. **OOTD** (25%): 옷차림과 스타일링
+3. **뷰티/셀프케어** (20%): 메이크업, 스킨케어
+4. **맛집/카페** (15%): 방문한 장소 후기
+5. **팔로워 소통** (10%): Q&A, 일상 질문
+
+### 주간 콘텐츠 계획표
+| 요일 | 콘텐츠 유형 | 예시 |
+|------|-------------|------|
+| 월요일 | 일상 | 월요병 극복 루틴 |
+| 화요일 | OOTD | 오피스룩 스타일링 |
+| 수요일 | 뷰티 | 수요일 셀프케어 |
+| 목요일 | 일상 | 목요일 소소한 행복 |
+| 금요일 | 맛집 | 불금 맛집 탐방 |
+| 토요일 | OOTD | 주말 데이트룩 |
+| 일요일 | 소통 | 일주일 하이라이트 |
+
+### 촬영 및 편집 팁
+**촬영 시간대:**
+- **골든아워**: 일출/일몰 1시간 전후 (가장 예쁜 자연광)
+- **실내**: 창가에서 얼굴에 그림자가 지지 않게
+
+**기본 편집 순서:**
+1. **노출 조정**: 얼굴이 잘 보이도록
+2. **명도/채도**: 자연스럽게 보정
+3. **필터 적용**: 일관된 톤앤매너 유지
+4. **샤프닝**: 선명도 향상
+
+---
+
+## 📊 4단계: 성장 분석 및 개선 (9-12주차)
+
+### 주간 성과 체크리스트
+- [ ] 팔로워 증가 수: 목표 25명/주
+- [ ] 평균 좋아요 수: 팔로워의 5-10%
+- [ ] 스토리 조회수: 팔로워의 20-30%
+- [ ] 댓글 참여율: 게시물당 3-5개
+
+### 성장하지 않을 때 체크포인트
+1. **게시 시간 조정**: 팔로워가 가장 활발한 시간대 찾기
+2. **해시태그 다양화**: 매번 다른 조합 시도
+3. **스토리 활용도 증가**: 일일 스토리 게시
+4. **팔로워와 소통 강화**: 댓글, DM 적극 답변
+
+### 1000명 달성 후 다음 단계
+- **협찬 포트폴리오 준비**: 베스트 게시물 정리
+- **브랜드 아이덴티티 명확화**: 나만의 스타일 완성
+- **수익화 방안 검토**: 협찬, 제휴 기회 모색
+
+---
 
-너는 세계 최고의 sns브랜딩 전문가야
-
-이제 막 인스태그램 브랜딩을 시작하는 사람에게 네가 설문으로 묻고 답하는 방식으로 브랜딩을 도와준다면 어떤 설문을 제공할거야?
-
-그리고 가이드를 제공할때 어떤 기준으로 가이드를 제시할거야?
-
-이 내용을 토대로 웹 프로그램을 만들거니 아주 자세히 대답해줘.
-
-좋은 주제네요! 인스타그램 브랜딩은 정말 체계적인 접근이 필요한 분야죠. 최신 트렌드와 전략을 포함해서 완벽한 설문과 가이드를 만들어드릴게요.
-
-
-Instagram branding guide
-
-favicon
-favicon
-favicon
-리서치 완료
-•
-출처 334 개
-•
-10m 11s
-Your Instagram branding guide is ready. It includes a 2024-2025 trend analysis, a comprehensive survey framework, customized strategy templates, and implementation roadmap. The report provides detailed guidance on content formats, visual design trends, algorithm optimization, and performance metrics to systematically build your Instagram brand presence.
-
-
-Instagram Branding: Systematic Survey and Guidelines System for 2024-2025
-문서 
-
-
-
-위 내용을 충실히 반영해서 github와 streamlit에 발행할 수 있게 코드를 만들어 줘
-
-GitHub와 Streamlit에 배포할 수 있는 완전한 인스타그램 브랜딩 설문 시스템을 만들어드리겠습니다.
-
-
-Instagram Branding Survey System - Main App
-코드 
-
-
-
-계속
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 2 
-이제 GitHub에 배포하기 위한 추가 파일들을 만들어드리겠습니다:
-
-
-requirements.txt
-코드 
-
-README.md
-코드 
-
-
-
-코드가 완성된건가?
-
-네, 기본적인 코드는 완성되었지만 GitHub 배포를 위한 몇 가지 추가 파일들을 더 만들어드리겠습니다.
-
-
-README.md
-코드 ∙ 버전 2 
-
-.streamlit/config.toml
-코드 
-
-.gitignore
-코드 
-
-LICENSE
-코드 
-
-DEPLOYMENT.md
-코드 
-✅ 완성된 파일 목록
-네, 이제 완전한 GitHub + Streamlit 배포용 코드가 준비되었습니다!
-
-📁 프로젝트 파일 구조:
-app.py - 메인 애플리케이션 (Streamlit 앱)
-requirements.txt - Python 의존성 패키지
-README.md - 프로젝트 소개 및 사용법
-.streamlit/config.toml - Streamlit 설정 (테마, 포트 등)
-.gitignore - Git 버전 관리 제외 파일
-LICENSE - MIT 라이선스
-DEPLOYMENT.md - 상세한 배포 가이드
-🚀 즉시 배포 가능한 기능들:
-✨ 핵심 기능
-📋 25개 질문 체계적 설문조사 (6개 섹션)
-🎯 맞춤형 브랜딩 전략 생성 (AI 기반 매칭)
-📈 12주 실행 로드맵 (단계별 가이드)
-📊 성과 대시보드 (가상 데이터 시각화)
-📚 리소스 센터 (도구, 가이드, 템플릿)
-🎨 UX/UI 특징
-인스타그램 브랜드 컬러 적용
-반응형 레이아웃 (모바일 최적화)
-인터랙티브 차트 (Plotly 기반)
-진행률 추적 및 실시간 피드백
-📋 배포 절차:
-GitHub 저장소 생성
-모든 파일 업로드
-Streamlit Cloud 연결
-자동 배포 완료!
-🔄 향후 확장 가능한 기능:
-Instagram API 연동 (실시간 데이터)
-AI 콘텐츠 추천 (GPT 연동)
-사용자 데이터베이스 (PostgreSQL)
-이메일 리포트 자동 발송
-이제 바로 GitHub에 올리고 Streamlit Cloud에서 배포하실 수 있습니다! 🎉
-
-
-
-
-File "/mount/src/branding_consulting/app.py", line 567 with st.expander(f"Week {week_plan['week']}: {week_plan['phase ^ SyntaxError: unterminated string literal (detected at line 567)
-
-문법 오류가 발생했네요! 567번째 줄의 문자열이 완료되지 않았습니다. 수정해드리겠습니다.
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 3 
-문법 오류가 수정되었습니다! 문제는 st.expander() 함수의 문자열이 완료되지 않았던 것이었습니다.
-
-이제 다시 Streamlit을 실행하시면 정상적으로 작동할 것입니다:
-
-bash
-streamlit run app.py
-만약 다른 오류가 발생한다면 알려주세요. 바로 수정해드리겠습니다! 🚀
-
-
-
-
-아래 에러가 뜨네
-
-ModuleNotFoundError: This app has encountered an error. The original error message is redacted to prevent data leaks. Full error details have been recorded in the logs (if you're on Streamlit Cloud, click on 'Manage app' in the lower right of your app).
-Traceback:
-
-File "/mount/src/branding_consulting/app.py", line 5, in <module>
-    import plotly.express as px
-Plotly가 설치되지 않아서 발생하는 오류입니다. requirements.txt 파일을 수정해서 해결하겠습니다.
-
-
-requirements.txt
-코드 ∙ 버전 2 
-그리고 앱 코드에서 불필요한 import들을 제거하겠습니다:
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 4 
-수정된 내용:
-
-❌ 제거된 패키지들:
-uuid==1.30 (Python 내장 모듈이므로 불필요)
-dataclasses-json==0.6.1 (사용하지 않음)
-json import (사용하지 않음)
-✅ 유지된 필수 패키지들:
-streamlit==1.28.1
-pandas==2.0.3
-plotly==5.17.0
-python-dateutil==2.8.2
-이제 Streamlit Cloud에서 앱이 정상적으로 배포될 것입니다.
-
-배포 후 확인사항:
-
-GitHub에 수정된 requirements.txt 파일 업로드
-Streamlit Cloud에서 자동 재배포 대기 (2-3분)
-앱 정상 작동 확인
-만약 여전히 오류가 발생한다면 Streamlit Cloud의 "Manage app" → "Logs"에서 자세한 오류 로그를 확인해주세요! 🚀
-
-
-
-
-아래 에러가 뜨네
-
-ModuleNotFoundError: This app has encountered an error. The original error message is redacted to prevent data leaks. Full error details have been recorded in the logs (if you're on Streamlit Cloud, click on 'Manage app' in the lower right of your app).
-Traceback:
-
-File "/mount/src/branding_consulting/app.py", line 4, in <module>
-    import plotly.express as px
-Plotly가 여전히 설치되지 않고 있네요. requirements.txt에서 버전을 제거하고 최신 버전으로 설치되도록 수정하겠습니다.
-
-
-requirements.txt
-코드 ∙ 버전 3 
-만약 여전히 문제가 있다면, plotly 없이도 작동하도록 앱을 수정하겠습니다:
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 5 
-이제 차트가 있는 부분들을 Plotly 없이도 작동하도록 수정하겠습니다:
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 6 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 7 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 8 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 9 
-이제 Plotly가 없어도 작동하는 안전한 버전으로 수정했습니다! 🎉
-
-✅ 수정 내용:
-requirements.txt 간소화: 버전 고정 제거로 호환성 문제 해결
-Plotly 선택적 import: 있으면 사용하고, 없으면 Streamlit 기본 차트 사용
-Fallback 차트: Plotly 차트 → Streamlit 내장 차트로 대체
-📊 차트 대체 방식:
-Pie Chart → Metric Cards
-Complex Bar Chart → Simple Bar Chart
-Line Chart → Streamlit Line Chart
-Scatter Plot → Streamlit Scatter Chart
-이제 다시 배포해보세요! Plotly가 설치되지 않더라도 앱이 정상 작동할 것입니다.
-
-GitHub에 수정 사항 업로드:
-
-bash
-git add .
-git commit -m "Fix: Add Plotly fallback for compatibility"
-git push origin main
-Streamlit Cloud에서 자동으로 재배포되고 2-3분 후 정상 작동할 것입니다! 🚀
-
-
-
-
-image.png
-Plotly is not available. Some charts will be replaced with simple metrics.
-
-이런 메시지가 뜨는 이유는?
-
-이 메시지가 뜨는 이유는 Streamlit Cloud에서 Plotly 라이브러리가 제대로 설치되지 않았기 때문입니다.
-
-🔍 원인 분석:
-requirements.txt 문제: 버전을 명시하지 않아서 설치 실패 가능성
-Streamlit Cloud 캐시: 이전 배포 시 실패한 설치가 캐시되어 있을 수 있음
-의존성 충돌: 다른 패키지와의 호환성 문제
-✅ 해결 방법:
-
-requirements.txt
-코드 ∙ 버전 4 
-또한 경고 메시지를 숨기고 더 나은 사용자 경험을 제공하도록 코드를 수정하겠습니다:
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 10 
-🚀 즉시 해결 방법:
-1. Streamlit Cloud에서 강제 재배포
-Streamlit Cloud → "Manage app" → "Reboot app" 클릭
-또는 GitHub에 더미 커밋 후 푸시
-2. GitHub 업데이트
-bash
-git add requirements.txt
-git commit -m "Fix: Update requirements.txt with version constraints"
-git push origin main
-3. Streamlit Cloud 캐시 클리어
-앱 설정에서 "Clear cache" 실행
-🎯 예상 결과:
-수정 후에는:
-
-✅ Plotly 설치 성공 시: 인터랙티브 차트 표시
-✅ Plotly 없어도: Streamlit 기본 차트로 대체 (경고 메시지 없음)
-📊 차트 품질 비교:
-기능	Plotly 차트	Streamlit 차트
-인터랙티브	⭐⭐⭐⭐⭐	⭐⭐⭐
-커스터마이징	⭐⭐⭐⭐⭐	⭐⭐
-로딩 속도	⭐⭐⭐	⭐⭐⭐⭐⭐
-호환성	⭐⭐⭐	⭐⭐⭐⭐⭐
-현재는 Streamlit 기본 차트로도 충분히 기능이 작동하므로, 사용자 경험에는 문제가 없습니다! 🎉
-
-
-
-
-image.png
-브랜딩 진단 시작하기 버튼을 누르면 아무 반응이 없어
-
-버튼이 작동하지 않는 문제를 수정하겠습니다. 네비게이션 로직에 문제가 있었네요.
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 11 
-그리고 메인 네비게이션 로직도 수정하겠습니다:
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 12 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 13 
-✅ 수정 내용:
-버튼 클릭 시 동작 개선:
-st.session_state.show_survey = True 플래그 추가
-버튼 클릭 시 설문조사 페이지로 자동 이동
-네비게이션 로직 개선:
-버튼 클릭 우선순위 설정
-사이드바 선택과 버튼 클릭 모두 처리
-세션 상태 관리:
-show_survey 플래그로 페이지 이동 제어
-플래그 자동 리셋으로 무한 루프 방지
-🚀 이제 다음과 같이 작동합니다:
-홈페이지에서 "🚀 브랜딩 진단 시작하기" 버튼 클릭
-자동으로 설문조사 페이지로 이동
-사이드바 네비게이션도 여전히 정상 작동
-GitHub에 업데이트하시면 버튼이 정상 작동할 것입니다! 🎉
-
-bash
-git add .
-git commit -m "Fix: Button navigation to survey page"
-git push origin main
-
-
-
-내용을 개인 인플루언서를 도전하는 측면에서 수정해 줘. 마케팅 비용을 집행하는 기업은 배제해줘
-
-개인 인플루언서에 특화된 버전으로 수정하겠습니다!
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 14 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 15 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 16 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 17 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 18 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 19 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 20 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 21 
-
-수정 중...
-코드 ∙ 버전 22 
-
-
-
-계속
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 23 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 24 
-
-수정 중...
-코드 ∙ 버전 25 
-
-
-
-계속
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 26 
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 27 
-
-수정 중...
-코드 ∙ 버전 28 
-
-
-
-계속
-
-
-Instagram Branding Survey System - Main App
-코드 ∙ 버전 29 
-✅ 개인 인플루언서 특화 버전 완성!
-이제 개인 인플루언서를 꿈꾸는 사람들에게 완벽하게 특화된 버전으로 수정되었습니다! 🌟
-
-🔄 주요 변경사항:
-1. 타이틀 및 컨셉 변경
-"Instagram Branding Expert" → "Instagram Influencer Expert"
-기업 마케팅 → 개인 인플루언서 성장에 포커스
-2. 설문조사 완전 개편
-비즈니스 단계 → 인플루언서 단계 (팔로워 수 기준)
-사업 분야 → 콘텐츠 분야 (라이프스타일, 뷰티, 피트니스 등)
-목표 → 인플루언서 목표 (팔로워 증가, 브랜드 협찬, 수익화 등)
-3. 전략 시스템 재구축
-라이프스타일 인플루언서: 일상 공유형 전략
-뷰티 인플루언서: 브랜드 협찬 중심 전략
-피트니스 인플루언서: 커뮤니티 기반 전략
-푸드 인플루언서: 레시피 수익화 전략
-4. 실행 계획 개편
-1-2주: 개인 브랜드 기초 설정
-3-6주: 콘텐츠 제작 및 일관성 구축
-7-10주: 팔로워 확장 및 참여도 증대
-11-12주: 수익화 및 브랜드 구축
-5. 리소스 섹션 인플루언서 특화
-필수 도구: VSCO, CapCut, Later 등 인플루언서 필수 앱
-성장 가이드: 릴스 마스터, 브랜드 협찬 받는 법 등
-콘텐츠 템플릿: GRWM, DIML, 협찬 콘텐츠 등
-업계 데이터: 팔로워별 참여율, 협찬료 기준 등
-6. 마케팅 비용 관련 완전 제거
-유료 광고 예산 → 콘텐츠 제작 예산 (의상, 소품 등)
-기업 마케팅 도구 → 개인 크리에이터 도구
-ROI 측정 → 팔로워 성장 및 참여율 중심
-🎯 이제 다음과 같은 사용자에게 완벽합니다:
-✅ 인플루언서 꿈나무 (팔로워 100명 미만)
-✅ 마이크로 인플루언서 (1K-10K)
-✅ 성장하는 크리에이터 (10K-100K)
-✅ 브랜드 협찬을 원하는 사람
-✅ 개인 브랜드를 구축하고 싶은 사람
-🚀 GitHub 업데이트:
-bash
-git add .
-git commit -m "Major Update: Convert to Personal Influencer Focus"
-git push origin main
-이제 완전히 개인 인플루언서에 특화된 성장 도구가 되었습니다! 🎉
-
-
-
-
-GitHub 업데이트는 어떻게 하는거야?
-
-GitHub 업데이트 방법을 단계별로 알려드리겠습니다! 📝
-
-🚀 GitHub 업데이트 방법
-방법 1: GitHub 웹사이트에서 직접 업데이
-
-
-
-
-def show_resources():
+## 💡 성공하는 인플루언서의 마인드셋
+
+### DO's ✅
+- **진정성 유지**: 가식적이지 않은 자연스러운 모습
+- **꾸준함**: 작은 일이라도 매일 꾸준히
+- **긍정적 에너지**: 팔로워에게 좋은 영향력 전달
+- **학습 정신**: 새로운 트렌드와 기능에 관심
+
+### DON'Ts ❌
+- **팔로워 구매**: 일시적 효과, 참여율 하락
+- **과도한 홍보**: 매 게시물마다 판매 시도
+- **비교 의식**: 다른 인플루언서와 과도한 비교
+- **일관성 부족**: 들쭉날쭉한 콘텐츠 품질
+
+---
+
+## 🚀 실전 첫 주 액션 플랜
+
+### Day 1-2: 프로필 완성
+- [ ] 프로필 사진 교체
+- [ ] 바이오 작성 및 최적화
+- [ ] 하이라이트 카테고리 설정
+
+### Day 3-4: 첫 콘텐츠 제작
+- [ ] 자기소개 포스트 작성
+- [ ] 5개 콘텐츠 필러 소개 스토리
+- [ ] 친구/지인들에게 계정 홍보
+
+### Day 5-7: 네트워킹 시작
+- [ ] 비슷한 분야 계정 20개 팔로우
+- [ ] 진정성 있는 댓글 10개 이상 작성
+- [ ] 첫 주간 후기 스토리 업로드
+
+**첫 주 목표: 팔로워 50명, 첫 게시물 좋아요 20개**
+
+이제 시작이 반입니다! 꾸준히 실행하면 분명 성과가 있을 거예요 ✨
+"""
+
+    elif guide_type == "릴스":
+        return """
+# 🎬 릴스 마스터하기: 바이럴 공식
+
+## 📱 릴스 알고리즘 이해하기
+
+### 알고리즘이 선호하는 릴스 특징
+1. **완시청률** (가장 중요): 끝까지 보는 비율
+2. **반복 시청률**: 여러 번 돌려보는 정도
+3. **빠른 참여**: 업로드 후 30분 내 반응
+4. **공유율**: DM, 스토리로 공유되는 횟수
+5. **저장률**: 나중에 보기 위해 저장하는 비율
+
+### 릴스 길이별 전략
+- **15초**: 임팩트 있는 한 가지 메시지
+- **30초**: 3단계 스토리텔링 (문제-과정-해결)
+- **60초**: 튜토리얼, 상세한 설명
+- **90초**: 깊이 있는 콘텐츠, 브이로그 스타일
+
+---
+
+## ⏰ 3초 법칙: 시선 사로잡기
+
+### 강력한 오프닝 기법
+1. **충격적인 질문**: "이거 몰랐으면 손해보는 거였어!"
+2. **Before & After**: 극적인 변화 미리보기
+3. **카운트다운**: "3가지만 알면 돼요"
+4. **반전 요소**: "여러분이 생각하는 것과 달라요"
+5. **긴급성**: "지금 당장 해봐야 하는 것"
+
+### 시각적 임팩트 기법
+- **클로즈업 샷**: 얼굴이나 손동작을 크게
+- **빠른 컷 편집**: 2-3초마다 장면 전환
+- **대비 강한 색상**: 눈에 띄는 의상/배경
+- **움직임**: 정적인 장면보다 동적인 움직임
+
+---
+
+## 🎵 트렌딩 오디오 활용법
+
+### 오디오 선택 기준
+1. **업로드 최신성**: 24시간 내 업로드된 사운드
+2. **사용량 증가세**: 급속도로 늘어나는 사용 횟수
+3. **내 콘텐츠와의 적합성**: 분위기와 메시지 일치
+4. **길이 적절성**: 내 콘텐츠 길이와 매치
+
+### 트렌딩 오디오 찾는 법
+1. **탐색 페이지 확인**: 인기 릴스에서 사용된 음악
+2. **경쟁자 분석**: 비슷한 계정들이 사용하는 음악
+3. **음악 앱 연동**: Spotify, Apple Music 트렌드 확인
+4. **릴스 음악 라이브러리**: 인스타그램 추천 음악
+
+---
+
+## ✂️ 편집 꿀팁 5가지
+
+### 1. 비트에 맞춘 편집
+- **음악의 비트**에 맞춰 장면 전환
+- **드롭 구간**에서 임팩트 있는 장면 배치
+- **템포 변화**에 따른 편집 속도 조절
+
+### 2. 텍스트 오버레이 활용
+```
+폰트 크기: 큰 제목 - 작은 설명
+색상: 배경과 대비되는 색
+위치: 얼굴을 가리지 않는 곳
+타이밍: 음성과 동기화
+```
+
+### 3. 전환 효과 (Transition) 마스터
+- **손으로 카메라 가리기** → 다른 장면으로 전환
+- **회전하며 장면 바꾸기** → 돌아서면서 전환
+- **점프컷** → 같은 자리에서 옷/표정 바뀜
+- **오브젝트 매칭** → 물건으로 연결되는 전환
+
+### 4. 속도 조절 활용
+- **슬로우모션**: 중요한 순간 강조 (0.5x)
+- **타임랩스**: 긴 과정을 짧게 (2-4x)
+- **일반 속도**: 대화나 설명 부분 (1x)
+- **속도 변화**: 비트에 맞춘 속도 변화
+
+### 5. 클로즈업과 풀샷 조합
+- **클로즈업**: 감정, 디테일 표현
+- **미디엄샷**: 제스처, 표정 종합
+- **풀샷**: 전체적인 상황, OOTD
+- **엑스트림 클로즈업**: 제품, 텍스처
+
+---
+
+## 📅 업로드 최적 시간대
+
+### 한국 기준 황금 시간대
+1. **평일 저녁**: 18:00-21:00 (퇴근 후 휴식 시간)
+2. **주말 오후**: 14:00-17:00 (여유로운 주말 오후)
+3. **점심시간**: 12:00-13:00 (직장인 점심 휴식)
+
+### 타겟별 최적 시간
+- **10대**: 방과 후 16:00-18:00, 밤 21:00-23:00
+- **20-30대**: 출근길 08:00-09:00, 퇴근길 18:00-20:00
+- **주부층**: 오전 10:00-12:00, 오후 14:00-16:00
+
+### 업로드 후 30분이 골든타임
+- **즉시 친구들에게 공유** 요청
+- **스토리에 릴스 공유**
+- **댓글 적극 답변**
+- **다른 계정들과 교류**
+
+---
+
+## 🏷️ 해시태그 전략
+
+### 릴스 전용 해시태그 (필수)
+```
+#reels #릴스 #instareel #reelsinstagram #viral
+```
+
+### 카테고리별 해시태그
+**뷰티 릴스:**
+```
+#뷰티 #메이크업 #뷰티팁 #makeup #beauty #skincare
+#kbeauty #cosmetics #뷰티루틴 #셀프메이크업
+```
+
+**패션 릴스:**
+```
+#패션 #ootd #fashion #style #outfit #코디
+#데일리룩 #스타일링 #패션스타그램 #옷스타그램
+```
+
+**라이프스타일 릴스:**
+```
+#일상 #daily #lifestyle #vlog #루틴 #데일리
+#소소한일상 #일상스타그램 #감성 #힐링
+```
+
+---
+
+## 📊 성과 분석 및 개선
+
+### 확인해야 할 지표들
+1. **조회수**: 도달범위와 알고리즘 반응
+2. **완시청률**: 콘텐츠 완성도 지표
+3. **좋아요 비율**: 조회수 대비 좋아요 비율
+4. **댓글 참여**: 소통과 engagement
+5. **공유/저장**: 콘텐츠 가치 인정도
+
+### 성과 개선 체크리스트
+**조회수가 낮다면:**
+- [ ] 오프닝 3초 개선
+- [ ] 트렌딩 오디오 사용
+- [ ] 해시태그 다양화
+- [ ] 업로드 시간 조정
+
+**완시청률이 낮다면:**
+- [ ] 릴스 길이 단축
+- [ ] 불필요한 구간 편집
+- [ ] 마지막까지 궁금증 유발
+- [ ] 반전 요소 추가
+
+---
+
+## 🎬 바이럴 릴스 공식
+
+### 황금 구성: Hook - Build - Payoff
+1. **Hook (3초)**: 강력한 첫인상
+2. **Build (중간)**: 긴장감과 호기심 증폭
+3. **Payoff (마지막)**: 만족스러운 결론
+
+### 바이럴 콘텐츠 유형
+1. **튜토리얼**: "이렇게 하면 완전 달라져요"
+2. **Before & After**: 극적인 변화
+3. **꿀팁**: "이거 몰랐으면 손해"
+4. **일상 반전**: "평범한 줄 알았는데..."
+5. **챌린지**: 따라하기 쉬운 액션
+
+### 실패하는 릴스의 공통점
+- 첫 3초에 임팩트 없음
+- 음악과 영상이 따로 놂
+- 너무 길거나 지루함
+- 해시태그 부족
+- 화질이 떨어짐
+
+---
+
+## 🚀 실전 릴스 제작 체크리스트
+
+### 기획 단계
+- [ ] 타겟 오디언스 명확화
+- [ ] 핵심 메시지 1개 선정
+- [ ] 트렌딩 오디오 선택
+- [ ] 구성안 작성 (Hook-Build-Payoff)
+
+### 촬영 단계
+- [ ] 조명 확인 (얼굴이 밝게)
+- [ ] 배경 정리 (깔끔하게)
+- [ ] 복수 앵글 촬영
+- [ ] 여분 컷 충분히 확보
+
+### 편집 단계
+- [ ] 음악 비트에 맞춘 편집
+- [ ] 텍스트 가독성 확인
+- [ ] 전환 효과 자연스럽게
+- [ ] 마지막 CTA 추가
+
+### 업로드 단계
+- [ ] 최적 시간대 업로드
+- [ ] 해시태그 10-15개 사용
+- [ ] 매력적인 캡션 작성
+- [ ] 썸네일 이미지 선택
+
+이제 당신도 바이럴 릴스를 만들 수 있습니다! 🔥
+"""
+
+    elif guide_type == "협찬":
+        return """
+# 💼 브랜드 협찬 받는 법: 제안서부터 협상까지
+
+## 📈 협찬 받기 위한 기본 조건
+
+### 팔로워 수별 협찬 가능성
+- **1K-5K**: 소규모 브랜드, 제품 협찬
+- **5K-10K**: 중소 브랜드, 체험단 활동
+- **10K-50K**: 유명 브랜드, 정기 협찬
+- **50K+**: 대기업, 장기 파트너십
+
+### 필수 준비사항
+1. **일관된 콘텐츠 품질**: 최소 3개월간 꾸준한 업로드
+2. **명확한 타겟 오디언스**: 특정 연령/성별/관심사
+3. **높은 참여율**: 팔로워 대비 3% 이상 참여율
+4. **전문성**: 특정 분야에 대한 지식과 경험
+5. **개인 브랜드**: 독특하고 기억에 남는 캐릭터
+
+---
+
+## 📧 브랜드 어프로치 이메일 템플릿
+
+### 제목 라인 공식
+```
+[인플루언서명] X [브랜드명] 협업 제안 | 팔로워 [수]K, 참여율 [%]%
+```
+
+**예시:**
+```
+뷰티크리에이터 김예나 X 올리브영 협업 제안 | 팔로워 15K, 참여율 4.2%
+```
+
+### 이메일 본문 템플릿
+
+```
+안녕하세요, [브랜드명] 마케팅 담당자님
+
+저는 [전문분야] 인플루언서 [이름]입니다.
+
+■ 자기소개
+- 인스타그램: @[계정명] (팔로워 [수]명)
+- 전문분야: [뷰티/패션/라이프스타일 등]
+- 주요 타겟: [20대 여성, 직장인 등]
+- 평균 참여율: [%]%
+
+■ 협업 제안 이유
+[브랜드명]의 [특정 제품/서비스]에 대한 관심과 
+제 팔로워들에게 도움이 될 것이라는 확신으로 연락드립니다.
+
+■ 협업 가능 콘텐츠
+1. 제품 리뷰 포스트 (피드 게시물 1개)
+2. 사용 과정 릴스 (15-30초)
+3. 스토리 후기 (3-5개 스토리)
+4. 라이브 def show_resources():
     st.markdown('<div class="section-header"><h2>📚 인플루언서 리소스 센터</h2></div>', unsafe_allow_html=True)
     
     # 탭으로 리소스 구분
@@ -518,74 +501,144 @@ def show_resources():
                 
                 # 가이드별 미리보기 내용
                 if "첫걸음" in guide['제목']:
-                    st.markdown("""
+                    preview_content = """
                     **핵심 내용 미리보기:**
                     - 매력적인 프로필 설정법
                     - 첫 100명 팔로워 확보 전략  
                     - 콘텐츠 일관성 유지하기
                     - 해시태그 초보자 전략
-                    """)
+                    """
+                    full_content = generate_guide_content("첫걸음")
                 elif "릴스" in guide['제목']:
-                    st.markdown("""
+                    preview_content = """
                     **핵심 내용 미리보기:**
                     - 트렌딩 오디오 활용법
                     - 15초 안에 시선 사로잡기
                     - 릴스 편집 꿀팁 5가지
                     - 알고리즘 친화적 업로드 시간
-                    """)
+                    """
+                    full_content = generate_guide_content("릴스")
                 elif "협찬" in guide['제목']:
-                    st.markdown("""
+                    preview_content = """
                     **핵심 내용 미리보기:**
                     - 브랜드 어프로치 이메일 템플릿
                     - 협찬 단가 산정 방법
                     - 계약서 체크포인트
                     - 협찬 콘텐츠 제작 가이드라인
-                    """)
+                    """
+                    full_content = generate_guide_content("협찬")
+                elif "수익화" in guide['제목']:
+                    preview_content = """
+                    **핵심 내용 미리보기:**
+                    - 수익원 다각화 전략
+                    - 개인 브랜드 상품 출시법
+                    - 온라인 클래스 런칭 가이드
+                    - 지속가능한 수익 모델 구축
+                    """
+                    full_content = generate_guide_content("수익화")
+                elif "해시태그" in guide['제목']:
+                    preview_content = """
+                    **핵심 내용 미리보기:**
+                    - 해시태그 조합 황금 비율
+                    - 도달률 극대화 전략
+                    - 틈새 해시태그 발굴법
+                    - 시간대별 해시태그 활용
+                    """
+                    full_content = generate_guide_content("해시태그")
+                else:
+                    preview_content = "**가이드 내용 준비 중입니다.**"
+                    full_content = "가이드 내용이 준비 중입니다."
                 
-                st.button(f"전체 가이드 보기", key=f"guide_{guide['제목']}")
+                st.markdown(preview_content)
+                
+                # 전체 가이드 보기/숨기기 기능
+                if st.button(f"📚 전체 가이드 읽기", key=f"read_guide_{guide['제목']}"):
+                    st.session_state[f"show_guide_{guide['제목']}"] = not st.session_state.get(f"show_guide_{guide['제목']}", False)
+                
+                # 전체 가이드 내용 표시
+                if st.session_state.get(f"show_guide_{guide['제목']}", False):
+                    st.markdown("---")
+                    st.markdown(full_content)
+                    
+                    # 가이드 다운로드 버튼
+                    st.download_button(
+                        label="📥 가이드 PDF로 저장",
+                        data=full_content,
+                        file_name=f"{guide['제목'].replace(' ', '_').replace(':', '')}_guide.txt",
+                        mime="text/plain",
+                        key=f"download_guide_{guide['제목']}"
+                    )
     
     with tab3:
         st.markdown("### 🎨 인플루언서 콘텐츠 템플릿")
         
         template_categories = {
             "릴스 템플릿": [
-                "Get Ready With Me (GRWM)",
-                "Day in My Life (DIML)", 
-                "Before & After 변화",
-                "튜토리얼 & 팁 공유",
-                "Q&A 릴스 포맷"
+                {"name": "Get Ready With Me (GRWM)", "desc": "아침 루틴부터 완성된 룩까지"},
+                {"name": "Day in My Life (DIML)", "desc": "하루 일상을 매력적으로 담는 법"}, 
+                {"name": "Before & After 변화", "desc": "변화 과정을 드라마틱하게 표현"},
+                {"name": "튜토리얼 & 팁 공유", "desc": "노하우를 쉽게 전달하는 구성"},
+                {"name": "Q&A 릴스 포맷", "desc": "팔로워 질문에 재미있게 답하기"}
             ],
             "스토리 템플릿": [
-                "This or That 질문",
-                "팔로워 투표 시리즈",
-                "Behind the Scenes",
-                "Product Review 하이라이트",
-                "일일 루틴 공유"
+                {"name": "This or That 질문", "desc": "선택지를 제시하여 참여 유도"},
+                {"name": "팔로워 투표 시리즈", "desc": "투표 기능으로 소통하기"},
+                {"name": "Behind the Scenes", "desc": "일상의 뒷이야기 공유"},
+                {"name": "Product Review 하이라이트", "desc": "제품 리뷰를 하이라이트로"},
+                {"name": "일일 루틴 공유", "desc": "루틴을 스토리로 기록하기"}
             ],
             "캐러셀 아이디어": [
-                "일주일 룩북",
-                "Top 5 추천 리스트", 
-                "Before & After 과정",
-                "스타일링 팁 모음",
-                "월별 즐겨찾기"
+                {"name": "일주일 룩북", "desc": "한 주간의 스타일링 모음집"},
+                {"name": "Top 5 추천 리스트", "desc": "추천 아이템을 정리한 리스트"}, 
+                {"name": "Before & After 과정", "desc": "변화 과정을 단계별로 보여주기"},
+                {"name": "스타일링 팁 모음", "desc": "유용한 팁들을 한눈에"},
+                {"name": "월별 즐겨찾기", "desc": "이달의 최애 아이템 소개"}
             ],
             "협찬 콘텐츠": [
-                "자연스러운 제품 소개",
-                "사용 후기 & 리뷰",
-                "제품 비교 분석",
-                "라이프스타일 연출",
-                "Unboxing & 첫인상"
+                {"name": "자연스러운 제품 소개", "desc": "일상에 자연스럽게 녹인 협찬"},
+                {"name": "사용 후기 & 리뷰", "desc": "솔직한 후기로 신뢰도 높이기"},
+                {"name": "제품 비교 분석", "desc": "객관적 비교로 전문성 어필"},
+                {"name": "라이프스타일 연출", "desc": "제품과 함께하는 라이프스타일"},
+                {"name": "Unboxing & 첫인상", "desc": "개봉기와 첫 사용 경험"}
             ]
         }
         
         for category, templates in template_categories.items():
             st.markdown(f"#### {category}")
-            cols = st.columns(2)
+            
             for i, template in enumerate(templates):
-                with cols[i % 2]:
-                    st.markdown(f"📱 **{template}**")
-                    if st.button(f"템플릿 보기", key=f"template_{category}_{i}"):
-                        st.info(f"'{template}' 템플릿 상세 가이드를 확인하세요!")
+                col1, col2, col3 = st.columns([3, 4, 2])
+                
+                with col1:
+                    st.markdown(f"**📱 {template['name']}**")
+                
+                with col2:
+                    st.markdown(f"*{template['desc']}*")
+                
+                with col3:
+                    # 실제 다운로드 가능한 템플릿 생성
+                    template_content = generate_template_content(template['name'], category)
+                    
+                    st.download_button(
+                        label="📥 다운로드",
+                        data=template_content,
+                        file_name=f"{template['name'].replace(' ', '_').replace('&', 'and')}_template.txt",
+                        mime="text/plain",
+                        key=f"download_{category}_{i}"
+                    )
+            st.markdown("---")
+        
+        # 추가: 모든 템플릿 한번에 다운로드
+        st.markdown("### 📦 전체 템플릿 패키지")
+        
+        all_templates = generate_all_templates_package()
+        st.download_button(
+            label="🎁 모든 템플릿 한번에 다운로드",
+            data=all_templates,
+            file_name="influencer_templates_complete_package.txt",
+            mime="text/plain",
+            key="download_all_templates"
+        )
     
     with tab4:
         st.markdown("### 📊 인플루언서 업계 데이터 및 벤치마크")
@@ -605,7 +658,322 @@ def show_resources():
                 fig = px.bar(
                     x=benchmark_data["팔로워_구간"],
                     y=benchmark_data["평균_참여율"],
-                def generate_influencer_guide(profile: UserProfile, strategy: BrandStrategy) -> str:
+                def generate_template_content(template_name: str, category: str) -> str:
+    """개별 템플릿 콘텐츠 생성"""
+    
+    base_header = f"""
+🎨 {template_name} 템플릿
+카테고리: {category}
+생성일: {datetime.now().strftime('%Y-%m-%d')}
+
+{'='*50}
+📋 템플릿 개요
+{'='*50}
+"""
+    
+    if "GRWM" in template_name:
+        content = base_header + """
+💄 Get Ready With Me (GRWM) 템플릿
+
+🎯 목적: 아침/저녁 루틴을 매력적으로 보여주어 팔로워와 친밀감 형성
+
+📝 구성 단계:
+1. 오프닝 (3초): "안녕 여러분! 오늘 GRWM 시작할게요"
+2. 스킨케어 (10-15초): 단계별 제품 사용 모습
+3. 베이스 메이크업 (10-15초): 파운데이션, 컨실러 등
+4. 포인트 메이크업 (15-20초): 아이섀도, 립 등
+5. 헤어스타일링 (10초): 간단한 헤어 연출
+6. 완성된 모습 (5초): 최종 룩 공개
+7. 엔딩 (2초): "오늘 룩 어떠세요? 댓글로 알려주세요!"
+
+💡 촬영 팁:
+- 자연광이 들어오는 곳에서 촬영
+- 거울 앞에서 45도 각도로 촬영
+- 제품 사용하는 모습을 클로즈업으로
+- 트렌딩 음악 사용 (저작권 주의)
+
+📸 필수 샷:
+□ 민낯 → 완성 룩 비교
+□ 제품들 플랫레이
+□ 사용 과정 타임랩스
+□ 완성된 룩 정면/측면
+
+🏷️ 추천 해시태그:
+#GRWM #GetReadyWithMe #morningroutine #makeup #dailylook #뷰티 #메이크업 #일상 #루틴 #셀프메이크업
+
+💬 캡션 예시:
+"오늘의 GRWM✨ 
+요즘 즐겨 쓰는 제품들로 
+내추럴한 데일리 메이크업 완성!
+어떤 단계가 가장 궁금하세요?
+댓글로 알려주시면 자세히 알려드릴게요💕
+
+#GRWM #데일리메이크업"
+"""
+
+    elif "DIML" in template_name:
+        content = base_header + """
+🌅 Day in My Life (DIML) 템플릿
+
+🎯 목적: 일상을 매력적으로 보여주어 팔로워들과 라이프스타일 공유
+
+📝 구성 단계:
+1. 굿모닝 (3초): 침실에서 일어나는 모습
+2. 모닝루틴 (10초): 세안, 스킨케어, 옷 입기
+3. 아침식사 (5초): 건강한 아침 메뉴
+4. 일과 시작 (10초): 출근/공부/운동 등
+5. 점심시간 (5초): 맛있는 점심 메뉴
+6. 오후 활동 (10초): 주요 활동들
+7. 저녁 루틴 (10초): 저녁식사, 휴식
+8. 나이트 루틴 (7초): 세안, 스킨케어, 잠자리 준비
+
+💡 촬영 팁:
+- 하루 종일 틈틈이 촬영
+- 각 장면마다 다른 앵글 사용
+- 타임랩스와 일반 속도 조합
+- 감성적인 음악 선택
+
+📸 필수 샷:
+□ 침실 → 화장실 → 부엌 → 외출
+□ 음식/음료 클로즈업
+□ 거울 셀카
+□ 발걸음, 손동작 디테일
+
+🏷️ 추천 해시태그:
+#DIML #DayInMyLife #daily #lifestyle #routine #vlog #일상 #라이프 #데일리 #브이로그
+
+💬 캡션 예시:
+"평범하지만 소중한 하루🌸
+요즘 루틴이 많이 바뀌었는데
+어떤 부분이 가장 궁금하신가요?
+댓글로 질문해주세요!
+
+#DIML #일상브이로그"
+"""
+
+    elif "Before & After" in template_name:
+        content = base_header + """
+✨ Before & After 변화 템플릿
+
+🎯 목적: 변화 과정을 드라마틱하게 보여주어 높은 참여율과 저장률 달성
+
+📝 구성 단계:
+1. Before 공개 (3초): 변화 전 모습
+2. 과정 예고 (2초): "지금부터 변신 시작!"
+3. 변화 과정 (15초): 단계별 변화 과정
+4. After 공개 (3초): 변화 후 모습
+5. 비교 장면 (2초): Before/After 나란히
+
+💡 적용 분야:
+- 메이크업 변신 (민낯 → 완성)
+- 헤어스타일 변화 (기본 → 스타일링)
+- 방 정리 (어수선함 → 깔끔함)
+- 옷 스타일링 (기본 → 완성)
+- 운동 효과 (Before → After)
+
+📸 촬영 팁:
+- 같은 각도, 같은 조명에서 촬영
+- Before는 의도적으로 평범하게
+- 과정은 타임랩스 활용
+- After는 여러 각도로 보여주기
+
+🏷️ 추천 해시태그:
+#BeforeAndAfter #transformation #glow up #makeover #변신 #변화 #뷰티 #스타일링
+
+💬 캡션 예시:
+"놀라운 변화🤩
+이렇게 달라질 줄 몰랐는데...
+어느 부분 변화가 가장 놀라우셨나요?
+댓글로 알려주세요!
+
+#변신 #BeforeAndAfter"
+"""
+
+    elif "튜토리얼" in template_name:
+        content = base_header + """
+📚 튜토리얼 & 팁 공유 템플릿
+
+🎯 목적: 유용한 정보를 쉽게 전달하여 전문성 어필 및 저장률 증대
+
+📝 구성 단계:
+1. 문제 제기 (3초): "이런 고민 있으시죠?"
+2. 해결책 소개 (2초): "오늘 알려드릴 팁은..."
+3. 단계별 설명 (20초): 3-5단계로 나누어 설명
+4. 결과 확인 (3초): 완성된 모습
+5. 핵심 포인트 (2초): "포인트는 바로 이것!"
+
+💡 인기 주제:
+- 메이크업 기법 (아이라인, 컨투어링 등)
+- 스타일링 팁 (옷 매칭, 액세서리 활용)
+- 사진 잘 찍는 법 (포즈, 각도)
+- 생활 꿀팁 (정리, 요리 등)
+- 셀프케어 방법
+
+📸 촬영 팁:
+- 각 단계마다 명확한 구분
+- 중요한 부분은 슬로우모션
+- 텍스트 오버레이로 설명 추가
+- 손동작을 크고 명확하게
+
+🏷️ 추천 해시태그:
+#tutorial #tips #howto #꿀팁 #튜토리얼 #팁 #노하우 #방법 #가이드
+
+💬 캡션 예시:
+"모르면 손해인 꿀팁💡
+정말 간단한데 효과는 확실해요!
+여러분도 따라해보시고 
+결과 사진 태그해주세요✨
+
+#꿀팁 #tutorial"
+"""
+
+    else:
+        # 기본 템플릿
+        content = base_header + f"""
+🎬 {template_name} 가이드
+
+📋 기본 구성:
+1. 오프닝 (2-3초): 시선을 끄는 첫 장면
+2. 메인 콘텐츠 (15-20초): 핵심 내용 전달
+3. 클로징 (2-3초): 마무리 및 CTA
+
+💡 촬영 팁:
+- 첫 3초가 가장 중요
+- 음악과 영상의 싱크 맞추기
+- 자연스러운 전환 효과 사용
+- 적절한 텍스트 오버레이 활용
+
+📸 권장 샷:
+□ 클로즈업
+□ 풀샷
+□ 디테일 샷
+□ 앵글 변화
+
+🏷️ 기본 해시태그:
+#{template_name.lower().replace(' ', '')} #인플루언서 #콘텐츠 #팁
+
+💬 캡션 작성 팁:
+- 개인적인 경험담 포함
+- 질문으로 참여 유도
+- 이모지 적절히 활용
+- 해시태그는 10개 내외
+"""
+
+    return content
+
+def generate_all_templates_package() -> str:
+    """모든 템플릿을 포함한 완전한 패키지 생성"""
+    
+    package = f"""
+🎁 인플루언서 콘텐츠 템플릿 완전 패키지
+생성일: {datetime.now().strftime('%Y-%m-%d')}
+
+{'='*60}
+📋 패키지 구성
+{'='*60}
+
+이 패키지에는 다음 템플릿들이 포함되어 있습니다:
+
+📱 릴스 템플릿 (5개)
+🎬 스토리 템플릿 (5개)  
+📸 캐러셀 아이디어 (5개)
+💼 협찬 콘텐츠 (5개)
+
+총 20개의 검증된 템플릿으로 구성되어 있습니다.
+
+{'='*60}
+🎯 사용 가이드
+{'='*60}
+
+1. 자신의 브랜드에 맞는 템플릿 선택
+2. 템플릿을 참고하여 콘텐츠 기획
+3. 개인만의 색깔 추가하여 차별화
+4. 지속적으로 실험하고 개선
+
+{'='*60}
+📈 성공 공식
+{'='*60}
+
+✨ 일관성: 정기적인 업로드
+🎯 타겟팅: 명확한 타겟 오디언스
+💡 창의성: 독창적인 아이디어
+📊 분석: 데이터 기반 개선
+🤝 소통: 팔로워와의 적극적 상호작용
+
+{'='*60}
+🛠️ 추천 도구
+{'='*60}
+
+촬영: 스마트폰 + 삼각대
+편집: CapCut, VSCO, Unfold
+기획: Notion, 캘린더 앱
+분석: Instagram Insights
+
+{'='*60}
+💡 월별 콘텐츠 아이디어
+{'='*60}
+
+1월: 새해 목표, 일상 루틴
+2월: 겨울 패션, 발렌타인
+3월: 봄 준비, 새학기
+4월: 봄 나들이, 패션
+5월: 야외 활동, 여행
+6월: 여름 준비, 다이어트
+7월: 휴가, 여름 스타일
+8월: 바캉스, 여름 뷰티
+9월: 가을 준비, 패션
+10월: 가을 분위기, 할로윈
+11월: 겨울 준비, 감성
+12월: 연말, 크리스마스
+
+{'='*60}
+🎨 개별 템플릿 상세 가이드
+{'='*60}
+
+"""
+    
+    # 각 템플릿의 상세 내용 추가
+    templates = [
+        ("Get Ready With Me (GRWM)", "릴스 템플릿"),
+        ("Day in My Life (DIML)", "릴스 템플릿"),
+        ("Before & After 변화", "릴스 템플릿"),
+        ("튜토리얼 & 팁 공유", "릴스 템플릿"),
+        ("This or That 질문", "스토리 템플릿"),
+        ("자연스러운 제품 소개", "협찬 콘텐츠")
+    ]
+    
+    for template_name, category in templates:
+        package += f"\n{'-'*40}\n"
+        package += generate_template_content(template_name, category)
+        package += f"\n{'-'*40}\n"
+    
+    package += f"""
+
+{'='*60}
+🚀 성공하는 인플루언서가 되는 법
+{'='*60}
+
+1. 진정성 유지: 가짜보다는 진짜 모습을
+2. 꾸준함: 작은 것이라도 매일 꾸준히
+3. 소통: 팔로워와의 진정한 관계 구축
+4. 학습: 트렌드와 알고리즘 변화 파악
+5. 실험: 새로운 콘텐츠 형식 시도
+6. 분석: 데이터를 통한 지속적 개선
+7. 네트워킹: 동료 크리에이터들과 교류
+
+{'='*60}
+📞 추가 지원
+{'='*60}
+
+이 템플릿들은 Instagram Influencer Expert에서 제공됩니다.
+더 상세한 가이드가 필요하시면 언제든 새로운 분석을 받아보세요!
+
+인플루언서로서의 성공적인 여정을 응원합니다! ✨
+
+생성 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+"""
+    
+    return package
     """인플루언서 가이드 문서 생성"""
     guide = f"""
 ✨ 개인 인플루언서 성장 가이드
