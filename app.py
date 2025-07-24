@@ -259,6 +259,8 @@ if 'user_profile' not in st.session_state:
     st.session_state.user_profile = None
 if 'strategy' not in st.session_state:
     st.session_state.strategy = None
+if 'show_survey' not in st.session_state:
+    st.session_state.show_survey = False
 
 # 메인 앱
 def main():
@@ -267,10 +269,16 @@ def main():
     
     # 사이드바 네비게이션
     st.sidebar.title("📋 Navigation")
-    page = st.sidebar.selectbox(
-        "페이지 선택",
-        ["🏠 홈", "📝 브랜딩 설문조사", "📊 결과 및 전략", "📈 성과 대시보드", "📚 리소스"]
-    )
+    
+    # 버튼으로 설문조사 페이지 이동이 요청된 경우
+    if st.session_state.get('show_survey', False):
+        page = "📝 브랜딩 설문조사"
+        st.session_state.show_survey = False  # 플래그 리셋
+    else:
+        page = st.sidebar.selectbox(
+            "페이지 선택",
+            ["🏠 홈", "📝 브랜딩 설문조사", "📊 결과 및 전략", "📈 성과 대시보드", "📚 리소스"]
+        )
     
     if page == "🏠 홈":
         show_home()
@@ -302,7 +310,8 @@ def show_home():
         """)
         
         if st.button("🚀 브랜딩 진단 시작하기", key="start_survey", type="primary"):
-            st.session_state.current_page = "📝 브랜딩 설문조사"
+            # 세션 상태를 직접 변경하여 페이지 이동
+            st.session_state.show_survey = True
             st.rerun()
     
     with col2:
